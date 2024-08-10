@@ -1,0 +1,30 @@
+Q. What is Data Type in JS and How many types ?
+
+A data type defines the kind of value a variable can hold. It determines what operations can be performed on that value and how it is stored in memory.
+JavaScript has two main categories of data types:-
+1. Primitive Data Types:
+2. Non-Primitive Data Types (Reference Types):
+
+
+1. Primitive Data Types: Primitive data types are the most basic data types. They are immutable, meaning their values cannot be changed once created. 
+Any operation on a primitive type returns a new value rather than modifying the original value.
+
+JavaScript has 7 primitive data types:
+   Number: Represents both integer and floating-point numbers.
+   String: Represents textual data, enclosed in single or double quotes.
+   Boolean: Represents logical values, either true or false.
+   Undefined: Represents a variable that has been declared but not assigned a value.
+   Null: Represents the intentional absence of any object value.
+   Symbol: Represents a unique and immutable value, often used as object keys.
+   BigInt: Represents integers with arbitrary precision (larger than the Number type can handle).
+
+2. Non-Primitive Data Types (Reference Types): Non-primitive data types, also known as reference types, are more complex. 
+They are mutable and their values can be changed after creation. Non-primitive types are objects and are stored as references.
+
+   Object: Represents a collection of key-value pairs.
+   Array: Represents an ordered list of values.
+   Function: Represents a block of reusable code.
+   Date: Represents dates and times.
+   RegExp: Represents regular expressions.
+   Map: Collection of keyed data items, similar to an object but with any type of keys.
+   Set: Collection of unique values.

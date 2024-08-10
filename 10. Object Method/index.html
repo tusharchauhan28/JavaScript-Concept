@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("hello world ");
+
+      function add() {
+        // function scope => block scope
+        return {
+          a: 45,
+          b: ["hello", 43],
+          c: { first: 1, second: 2 },
+        };
+      }
+      console.log(typeof add);
+      console.log(typeof add());
+
+      let obj = add();
+      console.log(obj);
+      console.log(obj.b[1]);
+      console.log(obj.c.first);
+
+      //-------------------------------------------------------------
+
+      function Master(prog) {
+        return prog();
+      }
+
+      function greetMorn() {
+        return "Godd Morining";
+      }
+
+      function greetNight() {
+        return "Good Night";
+      }
+      console.log(Master(greetMorn));
+
+      //   Object Method ==> object + methods(function written inside object are called method)
+
+      let obbj = {
+        name: "John",
+        lastname: "chauhan",
+        add: function (a, b) {
+          return 1 + 2;
+        },
+        addNumber: function (a, b) {
+          return 1 + 5;
+        },
+      };
+      console.log(obbj.name);
+      console.log(obbj.add());
+      console.log(obbj.addNumber(4, 6));
+
+      console.table({ a: 1, b: 2 }); // show console in table formet
+      //------------------------------------------------------------------
+      let a = 10;
+
+      let objj = {
+        a: 15,
+        adds: function () {
+          // return a;
+          return this.a; // this = parent object
+        },
+      };
+      console.log(objj.adds()); // 15
+
+      //------------------------------------------------------------------
+      let obbjj = {
+        a: "tushar",
+        b: "user",
+        add: function () {
+          return this.a + this.b;
+        },
+      };
+      console.log(obbjj.add()); // tusharuser
+
+
+//----------------------------------------------------------------
+
+// pre login      ||      // post login
+// GM User                // GM "User Name"
+
+
+    </script>
+  </body>
+</html>
